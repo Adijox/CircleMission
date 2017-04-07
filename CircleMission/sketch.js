@@ -16,7 +16,7 @@ var csize = 25;
 var foodSize = 15;
 var speed;
 var energy;
-var song;
+
 var foodTimer = 0;
 var score = 0;
 var endtext = "Thank you for playing" + "Your Score is :  " + score;
@@ -25,9 +25,7 @@ var endtext = "Thank you for playing" + "Your Score is :  " + score;
 setInterval(horloge, 1000);
 setInterval(draw, 10);
 
-function preload() {
-    song = loadSound('music.mp3');
-}
+
 function setup() {
     createCanvas(windowWidth, windowHeight);
     Obstacle();
@@ -43,10 +41,7 @@ function setup() {
 }
 
 function draw() {
-    if(time == 3000) {
-        
-    song.play();
-    }
+    
     background(55);
     
     
