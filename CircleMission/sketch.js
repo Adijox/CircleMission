@@ -114,8 +114,9 @@ function Food() {
     if(magn <= foodSize/2 + csize/2) {
         Obstacle();
         score += 1;
-        energy += 100;
+        energy += 10;
         speed += 0.2;
+        csize += 1;
      
     }
     if (foodTimer >= 200) {
@@ -134,23 +135,23 @@ function Food() {
        function Curseur () {
            if(keyIsDown(40) && cmagn > minrange) {
                cmagn -= 1;
-               energy -= 1;
+               energy -= 0.2;
 
            }
            if(keyIsDown(38) && cmagn < maxrange ) {
                cmagn += 1;
-               energy -= 1;
+               energy -= 0.2;
            }
            
            
            if(keyIsDown(37)) {
                a -= 1;
-               energy -= 1;
+               energy -= 0.2;
 
            }
            if(keyIsDown(39)) {
                a += 1;
-               energy -= 1;
+               energy -= 0.2;
            }
        
 
