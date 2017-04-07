@@ -16,6 +16,7 @@ var csize = 25;
 var foodSize = 15;
 var speed;
 var energy;
+var score = 0;
 
 var foodTimer = 0;
 var score = 0;
@@ -116,7 +117,7 @@ function Food() {
     if(magn <= foodSize/2 + csize/2) {
         Obstacle();
         score += 1;
-        energy += 10;
+        energy += 30;
         speed += 0.2;
         csize += 1;
      
