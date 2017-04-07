@@ -26,7 +26,7 @@ setInterval(horloge, 1000);
 setInterval(draw, 10);
 
 function preload() {
-    song = loadSound('assets/music.mp3');
+    song = loadSound('music.mp3');
 }
 function setup() {
     createCanvas(windowWidth, windowHeight);
@@ -43,7 +43,7 @@ function setup() {
 }
 
 function draw() {
-    if(time == 30) {
+    if(time == 3000) {
         
     song.play();
     }
