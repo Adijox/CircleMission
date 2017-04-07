@@ -25,7 +25,9 @@ var endtext = "Thank you for playing" + "Your Score is :  " + score;
 setInterval(horloge, 1000);
 setInterval(draw, 10);
 
-
+function preload() {
+    song = loadSound('assets/music.mp3');
+}
 function setup() {
     createCanvas(windowWidth, windowHeight);
     Obstacle();
@@ -36,7 +38,7 @@ function setup() {
     noStroke();
     speed = 1;
     energy = 1155;
-    song = loadSound('assets/music.mp3');
+    
     
 }
 
