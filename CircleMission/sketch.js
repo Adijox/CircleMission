@@ -184,7 +184,8 @@ function Food() {
 function gameOver () {
     background(255);
     textSize(50);
+    console.log(score);
     fill(72, 75, 100);
     text(endtext, 200, 200);
-    error();
+    return;
 }
