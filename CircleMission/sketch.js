@@ -16,6 +16,7 @@ var csize = 25;
 var foodSize = 15;
 var speed;
 var energy;
+var song;
 var foodTimer = 0;
 var score = 0;
 var endtext = "Thank you for playing" + "Your Score is :  " + score;
@@ -35,11 +36,12 @@ function setup() {
     noStroke();
     speed = 1;
     energy = 1155;
+    song = loadSound('assets/music.mp3');
     
 }
 
 function draw() {
-    
+    song.play();
     background(55);
     
     
