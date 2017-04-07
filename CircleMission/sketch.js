@@ -20,7 +20,7 @@ var score = 0;
 
 var foodTimer = 0;
 var score = 0;
-var endtext = "Thank you for playing" + "Your Score is :  " + score;
+var endtext;
 
 
 setInterval(horloge, 1000);
@@ -183,9 +183,11 @@ function Food() {
                
 function gameOver () {
     background(255);
+    endtext = "Thank you for playing" + "Your Score is :  " + score;
     textSize(50);
     console.log(score);
     fill(72, 75, 100);
     text(endtext, 200, 200);
+    return;
     
 }
