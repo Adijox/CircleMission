@@ -41,7 +41,10 @@ function setup() {
 }
 
 function draw() {
+    if(time == 30) {
+        
     song.play();
+    }
     background(55);
     
     
